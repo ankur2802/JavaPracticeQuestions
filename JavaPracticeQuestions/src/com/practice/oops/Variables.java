@@ -11,7 +11,9 @@ public class Variables {
 	System.out.println(s+a);
 	d1.human();
 	
-		
+	Counter obj1 = new Counter();
+    Counter obj2 = new Counter();
+    System.out.println("Total Count: " + Counter.count); // Output: Total Count: 2	
 		
 		
 	}
@@ -29,3 +31,15 @@ class Demo{
 		System.out.println(name + age);
 	}
 }
+
+
+
+
+class Counter {
+    static int count = 0; // Static variable (acts like a global variable)
+
+    Counter() {
+        count++;
+    }
+}
+
